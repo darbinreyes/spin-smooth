@@ -1,0 +1,19 @@
+[project]
+name = "spin-smooth"
+version = "0.1.0"
+description = "Experimenting on how to make spinners render smoothly, not blinky or jittery."
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "yaspin>=3.1",
+]
+
+[project.scripts]
+spin = "yaspin_repro:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["yaspin_repro"]
